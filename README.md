@@ -88,7 +88,7 @@ const logicScript = require('./behavior/scripts')
 
 const initNodeClient = InitClient.create(data, {
   succeed(result) {
-    sendLogicResult(data.payload, result)
+    sendLogicResult(data.payload)(result)
   }
 })
 
